@@ -70,7 +70,7 @@ ul li ul {
   min-width: 5rem;
   position: absolute;
   transition: all 0.5s ease;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   left: 0;
   display: none;
 }
@@ -88,43 +88,26 @@ ul li ul li {
 }
 article {
   float: left;
-  padding: 20px;
+  /* padding: 20px; */
   width: 100%;
   background-color: #494646;
+  padding: 10px;
 }
 section::after {
   content: "";
   display: table;
   clear: both;
 }
+section{
+  height: 100%;
+}
 footer {
   background-color:rgb(180, 145, 55);
   padding: 10px;
+  /* width: 100%; */
   text-align: center;
   color: white;
-  position: relative;
-}
-@media (max-width: 600px) {
-  nav,
-  article {
-    width: 100%;
-    height: auto;
-  }
-  .column {
-    float: left;
-    padding: 10px;
-  }
-  .column.right {
-    width: 25%;
-  }
-  .column.left {
-    width: 75%;
-  }
-  .row::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  position: sticky;
 }
 input[type=text], input[type=password] {
   width: 100%;
@@ -160,7 +143,7 @@ button:hover {
 
 .imgcontainer {
   text-align: center;
-  margin: 24px 0 12px 0;
+  /* margin: 24px 0 12px 0; */
   position: relative;
 }
 
